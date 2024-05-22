@@ -16,7 +16,6 @@ Welcome to the WooCommerce Extensions repository. This project contains custom p
    git clone https://github.com/PraveenKumarsenchola/WooCommerceExtensions.git
    cd WooCommerceExtensions
 
-
 1. Set Up WordPress Environment:
 
 Download and install WordPress.
