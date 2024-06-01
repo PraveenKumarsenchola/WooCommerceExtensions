@@ -11,35 +11,22 @@
  */
 // Register settings
 
-
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
 }
 
-
-
 // Include class-shipstream-api.php
 include_once 'includes/class-shipstream-api.php';
 
-
-
-
 // Hook into WooCommerce order completion
-
 add_action('woocommerce_thankyou', 'send_order_to_wms', 10, 1);
-
-
-
 
 add_action('admin_menu', 'shipstream_add_admin_menu');
 add_action('admin_init', 'shipstream_settings_init');
 
-
-
 function shipstream_add_admin_menu() {
     add_options_page('ShipStream Settings', 'ShipStream', 'manage_options', 'shipstream', 'shipstream_options_page');
 }
-
 
 function shipstream_settings_init() {
     register_setting('shipstream', 'shipstream_settings');
@@ -68,19 +55,12 @@ function shipstream_settings_init() {
     );
 }
 
-
-
-
-
 function shipstream_username_render() {
     $options = get_option('shipstream_settings');
     ?>
     <input type='text' name='shipstream_settings[shipstream_username]' value='<?php echo isset($options['shipstream_username']) ? esc_attr($options['shipstream_username']) : ''; ?>'>
     <?php
 }
-
-
-
 
 function shipstream_password_render() {
     $options = get_option('shipstream_settings');
@@ -89,15 +69,9 @@ function shipstream_password_render() {
     <?php
 }
 
-
-
-
 function shipstream_settings_section_callback() {
    // echo __('Enter your ShipStream API credentials here.', 'shipstream-integration');
 }
-
-
-
 
 function shipstream_options_page() {
     ?>
@@ -114,118 +88,111 @@ function shipstream_options_page() {
     <?php
 }
 
-
- 
 function send_order_to_wms($order_id) {
-    if (!$order_id) {
-        return;
-    }
+    try {
+        if (!$order_id) {
+            throw new Exception('Invalid order ID.');
+        }
 
-    $order = wc_get_order($order_id);
-    if (!$order) {
-        return;
-    }
+        $order = wc_get_order($order_id);
+        if (!$order) {
+            throw new Exception('Order not found.');
+        }
 
-    $items = [];
-    foreach ($order->get_items() as $item_id => $item) {
-        $product = $item->get_product();
-        $items[] = [
-            'sku' => $product->get_sku(),
-            'qty' => $item->get_quantity(),
-            'order_item_ref' => $item_id,
+        $items = [];
+        foreach ($order->get_items() as $item_id => $item) {
+            $product = $item->get_product();
+            $items[] = [
+                'sku' => $product->get_sku(),
+                'qty' => $item->get_quantity(),
+                'order_item_ref' => $item_id,
+            ];
+        }
+        $billing = $order->get_address('billing');
+
+        // Retrieve settings
+        $options = get_option('shipstream_settings');
+
+        // REST API credentials
+        $login_data = [
+            'jsonrpc' => '2.0',
+            'id' => 1234,
+            'method' => 'login',
+            'params' => [
+                isset($options['shipstream_username']) ? $options['shipstream_username'] : '',
+                isset($options['shipstream_password']) ? $options['shipstream_password'] : ''
+            ]
         ];
-    }
-    $billing = $order->get_address('billing');
 
+        $session_token = make_json_rpc_call('https://fiverr-sandbox.shipstream.app/api/jsonrpc/', $login_data);
+        if (!$session_token) {
+            throw new Exception('Login failed.');
+        }
 
-    // Retrieve settings
-    $options = get_option('shipstream_settings');
-
-    // REST API credentials
-    $login_data = [
-        'jsonrpc' => '2.0',
-        'id' => 1234,
-        'method' => 'login',
-        'params' => [
-            isset($options['shipstream_username']) ? $options['shipstream_username'] : '',
-            isset($options['shipstream_password']) ? $options['shipstream_password'] : ''
-        ]
-    ];
-
-
-    $session_token = make_json_rpc_call('https://fiverr-sandbox.shipstream.app/api/jsonrpc/', $login_data);
-
-    
-    if (!$session_token) {
-        $error_message = 'Login failed';
-        error_log($error_message);
-        update_post_meta($order_id, '_wms_error', $error_message);
-        return;
-    }
-
-    $data = [
-        'jsonrpc' => '2.0',
-        'id' => 1234,
-        'method' => 'call',
-        'params' => [
-            $session_token,
-            "order.create",
-            [
-                "",
-                $items,
+        $data = [
+            'jsonrpc' => '2.0',
+            'id' => 1234,
+            'method' => 'call',
+            'params' => [
+                $session_token,
+                "order.create",
                 [
-                    'firstname' => $billing['first_name'],
-                    'lastname' => $billing['last_name'],
-                    'company' => $billing['company'],
-                    'street1' => $billing['address_1'],
-                    'city' => $billing['city'],
-                    'region' => $billing['state'],
-                    'postcode' => $billing['postcode'],
-                    'country' => $billing['country'],
-                    'telephone' => $billing['phone'],
-                ],
-                [
-                    'order_ref' => $order->get_order_number(),
-                    'shipping_method' => "ups_03",
-                    'custom_greeting' => get_post_meta($order_id, '_custom_greeting', true),
-                    'note' => $order->get_customer_note(),
-                    'signature_required' => "none",
-                    'saturday_delivery' => false,
-                    'declared_value_service' => false,
-                    'overbox' => false,
-                    'delayed_ship_date' => get_post_meta($order_id, '_delayed_ship_date', true),
-                    'duties_payor' => 'third_party',
-                    'duties_tpb_group_id' => '1',
-                    'custom_fields' => ['colors' => [['id' => 6]]]
+                    "",
+                    $items,
+                    [
+                        'firstname' => $billing['first_name'],
+                        'lastname' => $billing['last_name'],
+                        'company' => $billing['company'],
+                        'street1' => $billing['address_1'],
+                        'city' => $billing['city'],
+                        'region' => $billing['state'],
+                        'postcode' => $billing['postcode'],
+                        'country' => $billing['country'],
+                        'telephone' => $billing['phone'],
+                    ],
+                    [
+                        'order_ref' => $order->get_order_number(),
+                        'shipping_method' => "ups_03",
+                        'custom_greeting' => get_post_meta($order_id, '_custom_greeting', true),
+                        'note' => $order->get_customer_note(),
+                        'signature_required' => "none",
+                        'saturday_delivery' => false,
+                        'declared_value_service' => false,
+                        'overbox' => false,
+                        'delayed_ship_date' => get_post_meta($order_id, '_delayed_ship_date', true),
+                        'duties_payor' => 'third_party',
+                        'duties_tpb_group_id' => '1',
+                        'custom_fields' => ['colors' => [['id' => 6]]]
+                    ]
                 ]
             ]
-        ]
-    ];
+        ];
 
-    $response = wp_remote_post('https://fiverr-sandbox.shipstream.app/api/jsonrpc/', [
-        'method' => 'POST',
-        'body' => json_encode($data),
-        'headers' => [
-            'Content-Type' => 'application/json',
-        ],
-    ]);
+        $response = wp_remote_post('https://fiverr-sandbox.shipstream.app/api/jsonrpc/', [
+            'method' => 'POST',
+            'body' => json_encode($data),
+            'headers' => [
+                'Content-Type' => 'application/json',
+            ],
+        ]);
 
-    if (is_wp_error($response)) {
-        $error_message = 'Error sending order to WMS: ' . $response->get_error_message();
+        if (is_wp_error($response)) {
+            throw new Exception('Error sending order to WMS: ' . $response->get_error_message());
+        } else {
+            $response_body = wp_remote_retrieve_body($response);
+            $decoded_response = json_decode($response_body, true);
+
+            if (isset($decoded_response['error'])) {
+                throw new Exception('Error from WMS: ' . print_r($decoded_response['error'], true));
+            } else {
+                error_log('Response from WMS: ' . print_r($decoded_response, true));
+                update_post_meta($order_id, '_wms_error', '');
+            }
+        }
+    } catch (Exception $e) {
+        $error_message = $e->getMessage();
         error_log($error_message);
         update_post_meta($order_id, '_wms_error', $error_message);
-    } else {
-        $response_body = wp_remote_retrieve_body($response);
-        $decoded_response = json_decode($response_body, true);
-
-        if (isset($decoded_response['error'])) {
-            $error_message = 'Error from WMS: ' . print_r($decoded_response['error'], true);
-            error_log($error_message);
-            update_post_meta($order_id, '_wms_error', $error_message);
-        } else {
-            error_log('Response from WMS: ' . print_r($decoded_response, true));
-            update_post_meta($order_id, '_wms_error', '');
-        }
     }
 }
 
