@@ -1,0 +1,50 @@
+2024-05-30T05:01:20+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 3ccac9125fc510b79de5a385f0565e8c
+            [Date] => May 30, 2024 @ 5:01
+            [URL] => https://intense-duly-moose.ngrok-free.app/woocomerce/
+            [Duration] => 0.91786
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.9.1 Hookshot (WordPress/6.5.3)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => http://localhost/woocomerce/
+                            [X-WC-Webhook-Topic] => product.created
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => 8/EMkEwu0Tnpmt65+T4goQCF4vNeiIfVM5EERl3es9o=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 3ccac9125fc510b79de5a385f0565e8c
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 404
+                    [Message] => Not Found
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-type] => text/html
+                                    [ngrok-error-code] => ERR_NGROK_3200
+                                    [referrer-policy] => no-referrer
+                                    [date] => Thu, 30 May 2024 05:01:20 GMT
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+

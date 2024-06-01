@@ -1,0 +1,150 @@
+2024-05-29T10:46:55+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => a0a6743dcfe16ae0934dceb23f0f7f7f
+            [Date] => May 29, 2024 @ 10:46
+            [URL] => https://intense-duly-moose.ngrok-free.app/woocomerce/
+            [Duration] => 0.89626
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.9.1 Hookshot (WordPress/6.5.3)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://localhost/woocomerce/
+                            [X-WC-Webhook-Topic] => product.created
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => njMG+cNbJwwX+YTcTDSIFsFOhouhsGkekvEGS74gG08=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => a0a6743dcfe16ae0934dceb23f0f7f7f
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 404
+                    [Message] => Not Found
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-type] => text/html
+                                    [ngrok-error-code] => ERR_NGROK_3200
+                                    [referrer-policy] => no-referrer
+                                    [date] => Wed, 29 May 2024 10:46:54 GMT
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2024-05-29T10:49:50+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 9d2d87c47f332668bfcba8be26680656
+            [Date] => May 29, 2024 @ 10:49
+            [URL] => https://intense-duly-moose.ngrok-free.app/woocomerce/
+            [Duration] => 1.65184
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.9.1 Hookshot (WordPress/6.5.3)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://localhost/woocomerce/
+                            [X-WC-Webhook-Topic] => product.created
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => 846khYNNUO21S6Lmrmwt2PknER0XlK9L9cIELJ9kXik=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 9d2d87c47f332668bfcba8be26680656
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 404
+                    [Message] => Not Found
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-type] => text/html
+                                    [ngrok-error-code] => ERR_NGROK_3200
+                                    [referrer-policy] => no-referrer
+                                    [date] => Wed, 29 May 2024 10:49:49 GMT
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2024-05-29T13:05:44+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 613d71b215ccddd8cacff26a3613f69f
+            [Date] => May 29, 2024 @ 13:05
+            [URL] => https://intense-duly-moose.ngrok-free.app/woocomerce/
+            [Duration] => 1.59913
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.9.1 Hookshot (WordPress/6.5.3)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://localhost/woocomerce/
+                            [X-WC-Webhook-Topic] => product.created
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => Z3G72/MZpQ8xD/ZVlrLKbd1fhk3HXR5EGfBW5JSDug4=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 613d71b215ccddd8cacff26a3613f69f
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 404
+                    [Message] => Not Found
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-type] => text/html
+                                    [ngrok-error-code] => ERR_NGROK_3200
+                                    [referrer-policy] => no-referrer
+                                    [date] => Wed, 29 May 2024 13:05:44 GMT
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+

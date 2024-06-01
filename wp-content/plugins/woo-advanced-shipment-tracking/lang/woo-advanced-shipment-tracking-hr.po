@@ -1,0 +1,1012 @@
+# Translation of Plugins - Advanced Shipment Tracking for WooCommerce - Development (trunk) in Croatian
+# This file is distributed under the same license as the Plugins - Advanced Shipment Tracking for WooCommerce - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-03-18 11:16+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % "
+"10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: hr\n"
+"Project-Id-Version: Plugins - Advanced Shipment Tracking for WooCommerce - "
+"Development (trunk)\n"
+"Language-Team: Croatian\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-06 07:16+0000\n"
+"Last-Translator: \n"
+"X-Loco-Version: 2.6.6; wp-6.4.2"
+
+#: includes/class-ast-integration-options.php:188
+msgid "3plwinner"
+msgstr "3plpobjednik"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:1912
+msgid "Add"
+msgstr "Dodati"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:2183
+msgid "Add API Name alias"
+msgstr "Dodajte alias naziva API-ja"
+
+#: includes/views/admin_options_shipping_provider.php:37
+#: includes/views/admin_options_shipping_provider.php:95
+msgid "Add Custom Carrier"
+msgstr "Dodaj prilagođenog prijevoznika"
+
+#. Description of the plugin
+msgid ""
+"Add shipment tracking information to your WooCommerce orders and provide "
+"customers with an easy way to track their orders. Shipment tracking Info "
+"will appear in customers accounts (in the order panel) and in WooCommerce "
+"order complete email."
+msgstr ""
+"Dodajte podatke o praćenju pošiljki svojim WooCommerce narudžbama i "
+"omogućite kupcima jednostavan način praćenja svojih narudžbi. Informacije o "
+"praćenju pošiljke pojavit će se na korisničkim računima (na ploči za "
+"narudžbu) iu kompletnoj e-pošti narudžbe WooCommerce."
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:539
+msgid "add the [wcast-track-order] shortcode in the selected page."
+msgstr "dodajte kratki kod [wcast-track-order] na odabranu stranicu."
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:1538
+msgid "Add Tracking"
+msgstr "Dodajte praćenje"
+
+#: includes/class-wc-advanced-shipment-tracking.php:337
+#: includes/class-wc-advanced-shipment-tracking-settings.php:513
+msgid "Add Tracking - order\t"
+msgstr "Dodaj praćenje - narudžba"
+
+#: includes/class-wc-advanced-shipment-tracking.php:331
+#: includes/class-wc-advanced-shipment-tracking.php:529
+msgid "Add Tracking Info"
+msgstr "Unesi Detalje Pošiljke"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:737
+msgid "Add Tracking Order action"
+msgstr "Dodaj radnju za praćenje narudžbe"
+
+#: includes/customizer/ast-customizer.php:484
+msgid "Additional text after header"
+msgstr "Dodatni tekst iza zaglavlja"
+
+#. Name of the plugin
+msgid "Advanced Shipment Tracking for WooCommerce"
+msgstr "Napredno praćenje pošiljke za WooCommerce"
+
+#: includes/class-ast-integration-options.php:212
+msgid "AliExpress Dropshipping"
+msgstr "AliExpress Dropshipping"
+
+#: includes/views/admin_options_shipping_provider.php:51
+msgid "All Carriers Selected."
+msgstr "Odabrani svi prijevoznici."
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:1653
+msgid "API aliases"
+msgstr "API aliasi"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:759
+msgid "API Date Format"
+msgstr "API format datuma"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:180
+msgid "Are you sure you want to delete this shipping carrier?"
+msgstr "Jeste li sigurni da želite izbrisati ovog prijevoznika?"
+
+#: includes/customizer/ast-customizer.php:91
+msgid "AST Customizer"
+msgstr "AST Customizer"
+
+#: includes/customizer/ast-customizer.php:680
+msgid "Available Placeholders:"
+msgstr "Dostupna rezervirana mjesta:"
+
+#: includes/customizer/ast-customizer.php:524
+msgid "Background color"
+msgstr "Boja pozadine"
+
+#: includes/customizer/ast-customizer.php:532
+msgid "Border color"
+msgstr "Boja obruba"
+
+#: includes/customizer/ast-customizer.php:540
+msgid "Border radius"
+msgstr "Polumjer granice"
+
+#: includes/customizer/ast-customizer.php:588
+msgid "Button color"
+msgstr "Boja gumba"
+
+#: includes/customizer/ast-customizer.php:596
+msgid "Button font color"
+msgstr "Boja fonta gumba"
+
+#: includes/customizer/ast-customizer.php:604
+msgid "Button radius"
+msgstr "Radijus gumba"
+
+#: includes/customizer/ast-customizer.php:576
+msgid "Button size"
+msgstr "Veličina gumba"
+
+#: includes/customizer/ast-customizer.php:566
+msgid "Button text"
+msgstr "Tekst gumba"
+
+#: includes/class-ast-integration-options.php:272
+msgid "Byrd Fulfillment"
+msgstr "Byrd ispunjenje"
+
+#: includes/api/class-wc-advanced-shipment-tracking-rest-api-controller.php:222
+msgid "Cannot create existing order shipment tracking."
+msgstr "Nije moguće kreirati praćenje pošiljke postojeće narudžbe."
+
+#: includes/views/admin_options_shipping_provider.php:162
+msgid "Carriers Added"
+msgstr "Nosači dodani"
+
+#: includes/views/admin_options_shipping_provider.php:164
+msgid "Carriers Deleted"
+msgstr "Prijevoznici izbrisani"
+
+#: includes/views/admin_options_shipping_provider.php:48
+msgid "carriers selected."
+msgstr "odabrani prijevoznici."
+
+#: includes/views/admin_options_shipping_provider.php:163
+msgid "Carriers Updated"
+msgstr "Prijevoznici ažurirani"
+
+#: includes/class-ast-integration-options.php:98
+msgid "CartRover"
+msgstr "CartRover"
+
+#: includes/class-wc-advanced-shipment-tracking-settings.php:227
+msgid "Change order status to"
+msgstr "Promijeni status narudžbe u"
+
+#. %s: search order status label
+#: includes/class-wc-advanced-shipment-tracking-settings.php:193
+#: includes/class-wc-advanced-shipment-tracking-settings.php:383
+#: includes/class-wc-advanced-shipment-tracking-settings.php:394
+#, php-format
+msgid "Change status to %s"
+msgstr "Promijeni status u %s"
+
+#: includes/class-wc-advanced-shipment-tracking-settings.php:474
+msgid "Change status to shipped"
+msgstr "Promijeni status u otpremljeno"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:761
+msgid "Choose for which Order status to display"
+msgstr "Odaberite status narudžbe za prikaz"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:760
+msgid ""
+"Choose the date format that you use when updating the shipment tracking API "
+"endpoint from external sources"
+msgstr ""
+"Odaberite format datuma koji koristite prilikom ažuriranja krajnje točke API-"
+"ja za praćenje pošiljke iz vanjskih izvora"
+
+#: includes/views/admin_options_bulk_upload.php:30
+msgid "Choose the Shipped Date format"
+msgstr "Odaberite format datuma isporuke"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:738
+msgid ""
+"Choose which Order Status in your store you would like to display Add the "
+"Tracking icon in the Order Actions menu."
+msgstr ""
+"Odaberite koji status narudžbe u svojoj trgovini želite prikazati. Dodajte "
+"ikonu za praćenje u izborniku Radnje narudžbe."
+
+#: includes/views/admin_options_shipping_provider.php:48
+msgid "Click Here"
+msgstr "Kliknite ovdje"
+
+#: includes/class-wc-advanced-shipment-tracking.php:479
+msgid "Completed"
+msgstr "Dovršeno"
+
+#: includes/views/admin_options_bulk_upload.php:53
+msgid "Continue"
+msgstr "Nastaviti"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:296
+#: includes/class-wc-advanced-shipment-tracking-admin.php:300
+msgid "CSV Import"
+msgstr "CSV uvoz"
+
+#: includes/class-ast-integration-options.php:170
+msgid "CustomCat"
+msgstr "CustomCat"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:436
+#: includes/class-wc-advanced-shipment-tracking-admin.php:556
+msgid "Customize"
+msgstr "Prilagodite"
+
+#: includes/views/admin_options_osm.php:63
+msgid "Dark Font"
+msgstr "Tamni font"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:179
+msgid "Data saved successfully."
+msgstr "Podaci su uspješno spremljeni."
+
+#: includes/class-wc-advanced-shipment-tracking.php:379
+#: includes/class-wc-advanced-shipment-tracking-settings.php:570
+msgid "Date shipped:"
+msgstr "Datum slanja:"
+
+#: includes/class-ast-integration-options.php:176
+msgid "Dear Systems"
+msgstr "Dragi Systems"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:1675
+msgid "Delete"
+msgstr "Izbrisati"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:926
+#: includes/class-wc-advanced-shipment-tracking-settings.php:143
+#: includes/class-wc-advanced-shipment-tracking-settings.php:161
+#: includes/class-wc-advanced-shipment-tracking-settings.php:215
+msgid "Delivered"
+msgstr "Isporučeno"
+
+#. %s: search number of order
+#: includes/class-wc-advanced-shipment-tracking-settings.php:149
+#, php-format
+msgid "Delivered <span class=\"count\">(%s)</span>"
+msgid_plural "Delivered <span class=\"count\">(%s)</span>"
+msgstr[0] "Isporučeno <span class=\"count\">(%s)</span>"
+msgstr[1] "Isporučeno <span class=\"count\">(%s)</span>"
+msgstr[2] ""
+
+#: includes/views/admin_options_shipping_provider.php:40
+msgid "Deselect All"
+msgstr "Odznači sve"
+
+#: includes/class-ast-integration-options.php:146
+msgid "DHL Shipping Germany for WooCommerce"
+msgstr "DHL Dostava Njemačka za WooCommerce"
+
+#: includes/class-ast-integration-options.php:194
+msgid "Dianxiaomi"
+msgstr "Dianxiaomi"
+
+#: includes/customizer/ast-customizer.php:501
+msgid "Display shipment status section"
+msgstr "Prikaz odjeljka statusa pošiljke"
+
+#: includes/views/admin_options_bulk_upload.php:115
+#| msgid "Download sample csv"
+msgid "Download \tsample csv"
+msgstr "Preuzmite uzorak csv"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:1674
+msgid "Edit"
+msgstr "Uredi"
+
+#: includes/views/edit_shipping_provider.php:41
+#| msgid "Edit Shipping Provider"
+msgid "Edit Shipping Carrier"
+msgstr "Uredi prijevoznika"
+
+#: includes/class-ast-integration-options.php:200
+msgid "EIZ"
+msgstr "EIZ"
+
+#: includes/customizer/ast-customizer.php:392
+#: includes/customizer/ast-customizer.php:393
+#: includes/customizer/ast-customizer.php:402
+#: includes/customizer/ast-customizer.php:446
+#: includes/customizer/ast-customizer.php:447
+#: includes/customizer/ast-customizer.php:624
+msgid "Email Content"
+msgstr "Sadržaj e-pošte"
+
+#: includes/customizer/ast-customizer.php:668
+msgid "Email content"
+msgstr "Sadržaj e-pošte"
+
+#: includes/customizer/ast-customizer.php:706
+msgid "Email Customizer"
+msgstr "Alat za prilagodbu e-pošte"
+
+#: includes/customizer/ast-customizer.php:656
+msgid "Email heading"
+msgstr "Naslov e-pošte"
+
+#: includes/customizer/ast-customizer.php:645
+msgid "Email Subject"
+msgstr "Predmet e-pošte"
+
+#: includes/customizer/ast-customizer.php:631
+#| msgid "Email Type"
+msgid "Email type"
+msgstr "Vrsta e-pošte"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:1602
+#: includes/class-wc-advanced-shipment-tracking-admin.php:1690
+#: includes/views/admin_options_shipping_provider.php:36
+msgid "Enable Carriers"
+msgstr "Omogući operatere"
+
+#: includes/customizer/ast-customizer.php:867
+msgid "Enable email"
+msgstr "Omogući e-poštu"
+
+#: includes/class-ast-integration-options.php:73
+msgid "Enable Integration"
+msgstr "Omogući integraciju"
+
+#: includes/views/admin_options_shipping_provider.php:64
+#| msgid "Add Shipping Carriers"
+msgid "Enable Shipping Carriers"
+msgstr "Omogući prijevoznike"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:2075
+#: includes/class-wc-advanced-shipment-tracking-admin.php:2092
+msgid "Filter by shipping provider"
+msgstr "Filtrirajte prema dobavljaču dostave"
+
+#: includes/class-wc-advanced-shipment-tracking.php:388
+#: includes/class-wc-advanced-shipment-tracking-settings.php:580
+msgid "Fulfill Order"
+msgstr "Ispuniti narudžbu"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:340
+#: includes/class-wc-advanced-shipment-tracking-admin.php:344
+#: includes/views/admin_options_settings.php:13
+msgid "General Settings"
+msgstr "Opće postavke"
+
+#: includes/class-ast-integration-options.php:254
+msgid "GLS Sell & Send Italy"
+msgstr "GLS Prodaj i Pošalji u Italiju"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:272
+msgid "Go Pro"
+msgstr "Idi Pro"
+
+#: templates/emails/customer-updated-tracking-order.php:24
+msgid ""
+"Hi there. we thought you'd like to know that the shipment tracking for your "
+"recent order from {site_title} has been updated."
+msgstr ""
+"Bok tamo. mislili smo da želite znati da je praćenje pošiljke za vašu "
+"nedavnu narudžbu sa {site_title} ažurirano."
+
+#: includes/customizer/ast-customizer.php:333
+msgid ""
+"Hi there. we thought you'd like to know that your recent order from "
+"{site_title} has been partially shipped."
+msgstr ""
+"Bok tamo. mislili smo da biste željeli znati da je vaša nedavna narudžba s "
+"{site_title} djelomično poslana."
+
+#: includes/class-wc-advanced-shipment-tracking-settings.php:854
+#: includes/class-wc-advanced-shipment-tracking-settings.php:871
+#: includes/class-wc-advanced-shipment-tracking-settings.php:888
+msgid "hide details"
+msgstr "sakri detalje"
+
+#: includes/customizer/ast-customizer.php:550
+#| msgid "Display shipping provider image"
+msgid "Hide shipping provider image"
+msgstr "Prikaži sliku dobavljača dostave"
+
+#: includes/customizer/ast-customizer.php:465
+#| msgid "Hide Tracking Header"
+msgid "Hide tracking header"
+msgstr "Sakrij zaglavlje praćenja"
+
+#: includes/views/admin_options_bulk_upload.php:116
+#| msgid "How to import tracking number from CSV files?"
+msgid "How to import \ttracking number from CSV files?"
+msgstr "Kako uvesti broj za praćenje iz CSV datoteka?"
+
+#. Author URI of the plugin
+msgid "https://www.zorem.com"
+msgstr "https://www.zorem.com"
+
+#. URI of the plugin
+msgid "https://www.zorem.com/products/woocommerce-advanced-shipment-tracking/"
+msgstr "https://www.zorem.com/products/woocommerce-advanced-shipment-tracking/"
+
+#: includes/views/admin_options_shipping_provider.php:48
+msgid "if you want to select all carriers."
+msgstr "ako želite odabrati sve prijevoznike."
+
+#: includes/views/admin_options_bulk_upload.php:72
+msgid "Import in Progress"
+msgstr "Uvoz u tijeku"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:304
+#: includes/class-wc-advanced-shipment-tracking-admin.php:307
+msgid "Integrations"
+msgstr "Integracije"
+
+#: includes/api/class-wc-advanced-shipment-tracking-rest-api-controller.php:231
+msgid "Invalid order ID."
+msgstr "Nevažeći ID narudžbe."
+
+#: includes/class-ast-integration-options.php:248
+msgid "Inventory source"
+msgstr "Izvor inventara"
+
+#: includes/class-ast-integration-options.php:116
+msgid "JTL-Connector"
+msgstr "JTL-konektor"
+
+#: includes/views/admin_options_bulk_upload.php:44
+#| msgid ""
+#| "Keep unchecked for the tracking info to be added to any existing tracking "
+#| "info added to the orders."
+msgid ""
+"Keep \tunchecked for the tracking info to be added to any existing tracking "
+"info added to the orders."
+msgstr ""
+"Držite poništeno kako bi se podaci o praćenju dodali svim postojećim "
+"podacima za praćenje dodanim narudžbama."
+
+#: includes/customizer/ast-customizer.php:582
+msgid "Large"
+msgstr "velika"
+
+#: includes/views/admin_options_osm.php:62
+msgid "Light Font"
+msgstr "Svijetli font"
+
+#: includes/class-wc-advanced-shipment-tracking.php:318
+msgid "Mark as Completed?"
+msgstr "Označiti kao dovršeno?"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:1547
+msgid "Mark as Shipped"
+msgstr "Označi kao isporučeno"
+
+#: includes/class-wc-advanced-shipment-tracking.php:315
+msgid "Mark as Shipped?"
+msgstr "Označiti kao isporučeno?"
+
+#: includes/class-wc-advanced-shipment-tracking-settings.php:252
+msgid "Mark order as delivered"
+msgstr "Označi narudžbu kao dostavljenu"
+
+#: includes/class-wc-advanced-shipment-tracking.php:504
+msgid "Mark order as:"
+msgstr "Označi narudžbu kao:"
+
+#: includes/customizer/ast-customizer.php:1083
+msgid "Mockup Order"
+msgstr "Narudžba makete"
+
+#: includes/class-ast-integration-options.php:59
+#: includes/views/admin_options_addons.php:54
+#: includes/views/admin_options_addons.php:72
+#: includes/views/admin_options_addons.php:90
+#: includes/views/admin_options_addons.php:108
+#: includes/views/admin_options_addons.php:126
+#: includes/views/admin_options_addons.php:144
+msgid "More Info"
+msgstr "Više informacija"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:540
+msgid "more info"
+msgstr "više informacija"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:2183
+msgid "Multiple API names mapping is a pro features"
+msgstr "Mapiranje više API imena je profesionalna značajka"
+
+#: includes/customizer/ast-customizer.php:581
+msgid "Normal"
+msgstr "Normalan"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:778
+msgid "Opt in to get email notifications for security & feature updates"
+msgstr ""
+"Uključite se za primanje obavijesti e-poštom o sigurnosnim ažuriranjima i "
+"ažuriranjima značajki"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:784
+msgid "Opt in to share some basic WordPress environment info"
+msgstr ""
+"Uključite se za dijeljenje nekih osnovnih informacija o WordPress okruženju"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:745
+msgid "Order Emails Display"
+msgstr "Prikaz e-pošte za narudžbe"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:349
+#: includes/class-wc-advanced-shipment-tracking-admin.php:353
+msgid "Order Statuses"
+msgstr "Statusi narudžbi"
+
+#: includes/views/admin_options_settings.php:29
+msgid "Order Statuses & Notifications"
+msgstr "Statusi narudžbi i obavijesti"
+
+#. %1$s: Reaplce with tracking provider, %2$s: Reaplce with tracking number
+#: includes/class-wc-advanced-shipment-tracking.php:1182
+#: includes/class-wc-advanced-shipment-tracking.php:1258
+#, php-format
+msgid "Order was shipped with %1$s and tracking number is: %2$s"
+msgstr "Narudžba je poslana s %1$s, a broj za praćenje je: %2$s"
+
+#: includes/class-ast-integration-options.php:91
+msgid "Ordoro"
+msgstr "Ordoro"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:532
+msgid "Other"
+msgstr "Ostalo"
+
+#: includes/class-ast-integration-options.php:104
+msgid "ParcelForce"
+msgstr "ParcelForce"
+
+#: includes/class-wc-advanced-shipment-tracking.php:495
+#: includes/class-wc-advanced-shipment-tracking-admin.php:915
+#: includes/class-wc-advanced-shipment-tracking-settings.php:282
+#: includes/class-wc-advanced-shipment-tracking-settings.php:314
+#: includes/customizer/ast-customizer.php:131
+#: includes/customizer/ast-customizer.php:363
+#: includes/customizer/ast-customizer.php:618
+msgid "Partially Shipped"
+msgstr "Djelomično otpremljeno"
+
+#. %s: replace with Partially Shipped Count
+#: includes/class-wc-advanced-shipment-tracking-settings.php:288
+#, php-format
+msgid "Partially Shipped <span class=\"count\">(%s)</span>"
+msgid_plural "Partially Shipped <span class=\"count\">(%s)</span>"
+msgstr[0] "Djelomično otpremljeno <span class=\"count\">(%s)</span>"
+msgstr[1] "Djelomično otpremljeno <span class=\"count\">(%s)</span>"
+msgstr[2] "Djelomično otpremljeno <span class=\"count\">(%s)</span>"
+
+#: includes/views/admin_options_settings.php:77
+msgid "PayPal Tracking"
+msgstr "PayPal praćenje"
+
+#: includes/class-ast-integration-options.php:182
+msgid "Picqer"
+msgstr "Picqer"
+
+#: includes/class-ast-integration-options.php:218
+msgid "Pirate Ship"
+msgstr "Gusarski brod"
+
+#. Please add shipping carriers from <a>here</a> (link to shipping providers page)
+#: includes/class-wc-advanced-shipment-tracking-settings.php:556
+#, php-format
+msgid "Please add shipping carriers from <a href=\"%s\">here</a>"
+msgstr "<a href=\"%s\">Odavde</a> dodajte prijevoznike"
+
+#. %s: search WooCommerce plugin link
+#: woocommerce-advanced-shipment-tracking.php:196
+#, php-format
+msgid ""
+"Please install and activate %1$sWooCommerce%2$s for Advanced Shipment "
+"Tracking for WooCommerce!"
+msgstr ""
+"Molimo instalirajte i aktivirajte %1$sWooCommerce%2$s za napredno praćenje "
+"pošiljke za WooCommerce!"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:183
+msgid "Please upload a valid CSV file."
+msgstr "Prenesite valjanu CSV datoteku."
+
+#: includes/class-ast-integration-options.php:260
+msgid "Print Label and Tracking Code for GLS"
+msgstr "Ispis naljepnice i koda za praćenje za GLS"
+
+#: includes/class-ast-integration-options.php:266
+msgid "Printful"
+msgstr "Ispis"
+
+#: includes/class-wc-advanced-shipment-tracking-settings.php:566
+msgid "Product Code:"
+msgstr "Šifra proizvoda:"
+
+#: templates/emails/plain/fluid-tracking-info.php:32
+msgid "Provider"
+msgstr "Pružatelj usluga"
+
+#: includes/class-ast-integration-options.php:152
+msgid "QuickBooks Commerce (formerly TradeGecko)"
+msgstr "QuickBooks Commerce (bivši TradeGecko)"
+
+#: includes/class-ast-integration-options.php:158
+msgid "ReadyToShip"
+msgstr "ReadyToShip"
+
+#: includes/views/admin_options_shipping_provider.php:31
+#| msgid "Delete Selected"
+msgid "Remove Selected"
+msgstr "Ukloni odabrano"
+
+#: includes/views/admin_options_osm.php:11
+msgid "Rename the “Completed” Order status label to “Shipped”"
+msgstr "Preimenujte oznaku statusa narudžbe \"Dovršeno\" u \"Otpremljeno\""
+
+#: includes/views/admin_options_bulk_upload.php:44
+msgid "Replace tracking information?"
+msgstr "Zamijeniti podatke o praćenju?"
+
+#: includes/views/admin_options_shipping_provider.php:168
+#| msgid ""
+#| "Reset providers database, it will reset all your shipping provider "
+#| "\tdatabase"
+msgid ""
+"Reset carriers database, it will reset all your shipping provider database"
+msgstr ""
+"Poništite bazu podataka prijevoznika, to će poništiti sve vaše baze podataka "
+"dostavljača"
+
+#: includes/class-ast-integration-options.php:164
+msgid "Royal Mail Click & Drop"
+msgstr "Royal Mail Click & Drop"
+
+#: includes/views/admin_options_settings.php:16
+#: includes/views/admin_options_settings.php:32
+#: includes/views/admin_options_settings.php:48
+#: includes/views/admin_options_settings.php:64
+msgid "Save & Close"
+msgstr "Spremi i zatvori"
+
+#: includes/customizer/ast-customizer.php:157
+msgid "Saved"
+msgstr "Spremljeno"
+
+#: includes/views/admin_options_shipping_provider.php:77
+#| msgid "Search by provider / country"
+msgid "Search by carrier / country"
+msgstr "Pretraživanje prema prijevozniku / zemlji"
+
+#: includes/views/admin_options_shipping_provider.php:39
+msgid "Select All"
+msgstr "Odaberi sve"
+
+#: includes/views/admin_options_osm.php:72
+msgid "Send Email"
+msgstr "Pošalji e-mail"
+
+#: includes/class-ast-integration-options.php:224
+msgid "Sendcloud"
+msgstr "Sendcloud"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:237
+#: includes/class-wc-advanced-shipment-tracking-admin.php:280
+#: includes/class-wc-advanced-shipment-tracking-admin.php:284
+msgid "Settings"
+msgstr "Postavke"
+
+#: includes/views/admin_options_bulk_upload.php:55
+msgid "Settings Saved."
+msgstr "Postavke spremljene."
+
+#. %s: replace with status
+#: templates/emails/plain/fluid-tracking-info.php:28
+#, php-format
+msgid "Shipment status changed to %s"
+msgstr "Status pošiljke je promijenjen u %s"
+
+#: includes/class-wc-advanced-shipment-tracking.php:142
+#: includes/class-wc-advanced-shipment-tracking.php:233
+#: includes/class-wc-advanced-shipment-tracking-admin.php:195
+#: includes/class-wc-advanced-shipment-tracking-admin.php:237
+msgid "Shipment Tracking"
+msgstr "Praćenje pošiljke"
+
+#: includes/views/admin_options_settings.php:45
+msgid "Shipment Tracking API"
+msgstr "API za praćenje pošiljke"
+
+#: includes/class-wc-advanced-shipment-tracking.php:479
+#: includes/class-wc-advanced-shipment-tracking-admin.php:573
+#: includes/class-wc-advanced-shipment-tracking-settings.php:438
+#: templates/emails/fluid-tracking-info.php:93
+#: templates/emails/fluid-tracking-info.php:116
+#: includes/customizer/ast-customizer.php:127
+#: includes/customizer/ast-customizer.php:353
+msgid "Shipped"
+msgstr "Isporučeno"
+
+#. %s: replace with shipped order count
+#: includes/class-wc-advanced-shipment-tracking-settings.php:458
+#, php-format
+msgid "Shipped <span class=\"count\">(%s)</span>"
+msgid_plural "Shipped <span class=\"count\">(%s)</span>"
+msgstr[0] "Otpremljeno <span class=\"count\">(%s)</span>"
+msgstr[1] "Otpremljeno <span class=\"count\">(%s)</span>"
+msgstr[2] "Otpremljeno <span class=\"count\">(%s)</span>"
+
+#: templates/emails/fluid-tracking-info.php:100
+#: templates/emails/fluid-tracking-info.php:123
+msgid "Shipped on"
+msgstr "Otpremljeno"
+
+#. 1: shipping date
+#: includes/class-wc-advanced-shipment-tracking.php:271
+#, php-format
+msgid "Shipped on %s"
+msgstr "Isporučeno %s"
+
+#: templates/myaccount/tracking-info.php:70
+msgid "Shipped on:"
+msgstr "Otpremljeno:"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:1501
+msgid "Shipped Order"
+msgstr "Isporučena narudžba"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:1920
+msgid "Shipping Carrier Already Added"
+msgstr "Prijevoznik je već dodan"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:1924
+msgid "Shipping Carrier Not Found!"
+msgstr "Prijevoznik nije pronađen!"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:288
+#: includes/class-wc-advanced-shipment-tracking-admin.php:292
+#: includes/views/admin_options_shipping_provider.php:26
+msgid "Shipping Carriers"
+msgstr "Prijevoznici"
+
+#: includes/views/admin_options_shipping_provider.php:166
+#| msgid "Shipping providers database reset successfully."
+msgid "Shipping carriers database reset successfully."
+msgstr "Baza podataka prijevoznika uspješno je poništena."
+
+#: includes/class-wc-advanced-shipment-tracking.php:350
+#: includes/class-wc-advanced-shipment-tracking.php:352
+#: includes/class-wc-advanced-shipment-tracking-settings.php:527
+#: includes/class-wc-advanced-shipment-tracking-settings.php:529
+msgid "Shipping Provider:"
+msgstr "Dostavna služba:"
+
+#: includes/class-ast-integration-options.php:242
+msgid "Shippo"
+msgstr "Shippo"
+
+#: includes/class-ast-integration-options.php:206
+msgid "Shippypro"
+msgstr "Shippypro"
+
+#: includes/class-ast-integration-options.php:122
+msgid "ShipStation"
+msgstr "Brodska stanica"
+
+#: includes/class-ast-integration-options.php:230
+msgid "Shiptheory"
+msgstr "Teorija broda"
+
+#: includes/class-ast-integration-options.php:278
+msgid "Shirtee Cloud"
+msgstr "Shirtee Cloud"
+
+#: includes/class-ast-integration-options.php:236
+msgid "Stamps.com"
+msgstr "Marke.com"
+
+#: includes/views/admin_options_shipping_provider.php:38
+msgid "Sync Carriers"
+msgstr "Nosači sinkronizacije"
+
+#: includes/views/admin_options_shipping_provider.php:152
+#: includes/views/admin_options_shipping_provider.php:170
+#| msgid "Sync Shipping Providers"
+msgid "Sync Shipping Carriers"
+msgstr "Sinkroniziraj prijevoznike"
+
+#: includes/views/admin_options_shipping_provider.php:160
+#| msgid ""
+#| "Syncing the shipping providers list add or updates the pre-set shipping "
+#| "providers and will not effect custom shipping providers."
+msgid ""
+"Syncing the shipping carriers list add or updates the pre-set shipping "
+"carriers and will not effect custom shipping carriers."
+msgstr ""
+"Sinkronizacija popisa prijevoznika dodaje ili ažurira unaprijed postavljene "
+"prijevoznike i neće utjecati na prilagođene prijevoznike."
+
+#: includes/class-wc-advanced-shipment-tracking-settings.php:836
+msgid "There are some issue with sync, Please Retry."
+msgstr "Postoji neki problem sa sinkronizacijom, pokušajte ponovo."
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:182
+msgid "This browser does not support HTML5."
+msgstr "Ovaj preglednik ne podržava HTML5."
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:746
+msgid ""
+"This option allows you to choose on which order status email you would like "
+"to display the tracking information"
+msgstr ""
+"Ova vam opcija omogućuje da odaberete na kojoj e-poruci statusa narudžbe "
+"želite prikazati podatke o praćenju"
+
+#: includes/class-wc-advanced-shipment-tracking.php:796
+#: includes/class-wc-advanced-shipment-tracking.php:821
+#: includes/class-wc-advanced-shipment-tracking.php:830
+#: templates/emails/plain/fluid-tracking-info.php:34
+msgid "Track"
+msgstr "Prati"
+
+#: includes/class-wc-advanced-shipment-tracking.php:258
+msgid "Track Shipment"
+msgstr "Prati Pošiljku"
+
+#: includes/customizer/ast-customizer.php:321
+msgid "Track Your Order"
+msgstr "Pratite svoju narudžbu"
+
+#: includes/customizer/ast-customizer.php:510
+msgid "Tracker type"
+msgstr "Vrsta tragača"
+
+#: includes/customizer/ast-customizer.php:437
+#: includes/customizer/ast-customizer.php:560
+#| msgid "Track Button"
+msgid "Tracking Button"
+msgstr "Gumb za praćenje"
+
+#: includes/customizer/ast-customizer.php:474
+#| msgid "Tracking Header text"
+msgid "Tracking header text"
+msgstr "Praćenje teksta zaglavlja"
+
+#. %1$s: Reaplce with tracking provider, %2$s: Reaplce with tracking number
+#: includes/class-wc-advanced-shipment-tracking.php:753
+#, php-format
+#| msgid ""
+#| "Tracking info was deleted for tracking provider %s with tracking number %s"
+msgid ""
+"Tracking info was deleted for tracking provider %1$s with tracking number "
+"%2$s"
+msgstr ""
+"Podaci o praćenju izbrisani su za pružatelja usluga praćenja %1$s s brojem "
+"za praćenje %2$s"
+
+#: templates/emails/plain/fluid-tracking-info.php:33
+msgid "Tracking Number"
+msgstr "Broj za Praćenje"
+
+#: includes/class-wc-advanced-shipment-tracking.php:346
+#: includes/class-wc-advanced-shipment-tracking-settings.php:523
+msgid "Tracking number:"
+msgstr "Broj pošiljke:"
+
+#: includes/customizer/ast-customizer.php:383
+#: includes/customizer/ast-customizer.php:384
+#: includes/customizer/ast-customizer.php:410
+#: includes/customizer/ast-customizer.php:420
+#: includes/customizer/ast-customizer.php:429
+#: includes/customizer/ast-customizer.php:438
+msgid "Tracking Widget"
+msgstr "Widget za praćenje"
+
+#: includes/views/admin_options_shipping_provider.php:51
+msgid "Undo"
+msgstr "Poništi"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:943
+#: includes/class-wc-advanced-shipment-tracking-settings.php:267
+#: includes/class-wc-advanced-shipment-tracking-settings.php:300
+#: includes/class-wc-advanced-shipment-tracking-settings.php:419
+msgid "Updated Tracking"
+msgstr "Ažurirano praćenje"
+
+#. %s: replace with Updated Tracking Count
+#: includes/class-wc-advanced-shipment-tracking-settings.php:273
+#, php-format
+msgid "Updated Tracking <span class=\"count\">(%s)</span>"
+msgid_plural "Updated Tracking <span class=\"count\">(%s)</span>"
+msgstr[0] "Ažurirano praćenje <span class=\"count\">(%s)</span>"
+msgstr[1] "Ažurirano praćenje <span class=\"count\">(%s)</span>"
+msgstr[2] "Ažurirano praćenje <span class=\"count\">(%s)</span>"
+
+#: includes/views/admin_options_bulk_upload.php:22
+msgid "Upload a CSV file from your computer:"
+msgstr "Prenesite CSV datoteku sa svog računala:"
+
+#: includes/views/admin_options_bulk_upload.php:105
+msgid "Upload again"
+msgstr "Ponovno prenesite"
+
+#: includes/views/admin_options_settings.php:61
+#| msgid "Save Tracking"
+msgid "Usage Tracking"
+msgstr "Praćenje korištenja"
+
+#: includes/class-wc-advanced-shipment-tracking-settings.php:853
+#: includes/class-wc-advanced-shipment-tracking-settings.php:870
+#: includes/class-wc-advanced-shipment-tracking-settings.php:887
+#: includes/views/admin_options_bulk_upload.php:83
+msgid "view details"
+msgstr "pregledavati pojedinosti"
+
+#: includes/views/admin_options_bulk_upload.php:104
+msgid "View Orders"
+msgstr "Pregledajte narudžbe"
+
+#: includes/class-ast-integration-options.php:128
+msgid "WC Shipping"
+msgstr "Dostava WC-a"
+
+#. %s: replace with Partially Shipped order count
+#: woocommerce-advanced-shipment-tracking.php:497
+#, php-format
+msgid ""
+"We detected %s orders that use the Delivered order status, You can reassign "
+"these orders to a different status"
+msgstr ""
+"Otkrili smo %s narudžbi koje koriste status Isporučena narudžba. Te narudžbe "
+"možete preusmjeriti u drugi status"
+
+#. %s: replace with Partially Shipped order count
+#: woocommerce-advanced-shipment-tracking.php:479
+#, php-format
+msgid ""
+"We detected %s orders that use the Partially Shipped order status, You can "
+"reassign these orders to a different status"
+msgstr ""
+"Otkrili smo %s narudžbi koje koriste status djelomično otpremljene narudžbe. "
+"Te narudžbe možete dodijeliti drugom statusu"
+
+#: includes/customizer/ast-customizer.php:419
+#: includes/customizer/ast-customizer.php:457
+msgid "Widget Header"
+msgstr "Zaglavlje widgeta"
+
+#: includes/customizer/ast-customizer.php:428
+#: includes/customizer/ast-customizer.php:495
+msgid "Widget Style"
+msgstr "Stil widgeta"
+
+#: includes/class-ast-integration-options.php:140
+msgid "WooCommerce Canada Post Shipping"
+msgstr "Dostava WooCommerce Kanadske pošte"
+
+#: includes/class-ast-integration-options.php:134
+msgid "WooCommerce UPS Shipping"
+msgstr "WooCommerce UPS dostava"
+
+#: includes/class-wc-advanced-shipment-tracking.php:380
+#: includes/class-wc-advanced-shipment-tracking-settings.php:571
+#: includes/class-wc-advanced-shipment-tracking-settings.php:571
+msgid "Y-m-d"
+msgstr "Y-m-d"
+
+#: includes/customizer/ast-customizer.php:704
+msgid "You are customizing"
+msgstr "Vi se prilagođavate"
+
+#: includes/class-wc-advanced-shipment-tracking-admin.php:181
+msgid "You can upload only csv file."
+msgstr "Možete prenijeti samo csv datoteku."
+
+#: includes/customizer/ast-customizer.php:332
+msgid "Your Order is Partially Shipped"
+msgstr "Vaša je narudžba djelomično otpremljena"
+
+#: includes/customizer/ast-customizer.php:331
+msgid "Your {site_title} order is now partially shipped"
+msgstr "Vaša narudžba {site_title} sada je djelomično poslana"
+
+#: includes/class-ast-integration-options.php:110
+msgid "Zenventory"
+msgstr "Zenventory"
+
+#. Author of the plugin
+msgid "zorem"
+msgstr "zorem"
