@@ -9,7 +9,6 @@
  * Text Domain: shipstream-integration
  * Domain Path: /languages
  */
-// Register settings
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
@@ -21,6 +20,7 @@ include_once 'includes/class-shipstream-api.php';
 // Hook into WooCommerce order completion
 add_action('woocommerce_thankyou', 'send_order_to_wms', 10, 1);
 
+// Add settings menu
 add_action('admin_menu', 'shipstream_add_admin_menu');
 add_action('admin_init', 'shipstream_settings_init');
 
@@ -53,6 +53,14 @@ function shipstream_settings_init() {
         'shipstream',
         'shipstream_section'
     );
+
+    add_settings_field(
+        'shipstream_api_url',
+        __('Would you like to use the Live URL or the Sandbox URL?', 'shipstream-integration'),
+        'shipstream_api_url_render',
+        'shipstream',
+        'shipstream_section'
+    );
 }
 
 function shipstream_username_render() {
@@ -69,8 +77,16 @@ function shipstream_password_render() {
     <?php
 }
 
+function shipstream_api_url_render() {
+    $options = get_option('shipstream_settings');
+    ?>
+    <input type="radio" name="shipstream_settings[shipstream_api_url]" value="live" <?php checked('live', isset($options['shipstream_api_url']) ? $options['shipstream_api_url'] : ''); ?> /> Live URL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="shipstream_settings[shipstream_api_url]" value="sandbox" <?php checked('sandbox', isset($options['shipstream_api_url']) ? $options['shipstream_api_url'] : ''); ?> /> Sandbox URL
+    <?php
+}
+
 function shipstream_settings_section_callback() {
-   // echo __('Enter your ShipStream API credentials here.', 'shipstream-integration');
+    // echo __('Enter your ShipStream API credentials here.', 'shipstream-integration');
 }
 
 function shipstream_options_page() {
@@ -113,18 +129,29 @@ function send_order_to_wms($order_id) {
         // Retrieve settings
         $options = get_option('shipstream_settings');
 
+        $api_url = isset($options['shipstream_api_url']) && $options['shipstream_api_url'] === 'live' 
+                    ? 'https://live-url.shipstream.app/api/jsonrpc/' 
+                    : 'https://fiverr-sandbox.shipstream.app/api/jsonrpc/';
+        $username = isset($options['shipstream_username']) ? $options['shipstream_username'] : '';
+        $password = isset($options['shipstream_password']) ? $options['shipstream_password'] : '';
+
+        if (empty($api_url) || empty($username) || empty($password)) {
+            throw new Exception('API credentials are not set.');
+        }
+
         // REST API credentials
         $login_data = [
             'jsonrpc' => '2.0',
             'id' => 1234,
             'method' => 'login',
             'params' => [
-                isset($options['shipstream_username']) ? $options['shipstream_username'] : '',
-                isset($options['shipstream_password']) ? $options['shipstream_password'] : ''
+                $username,
+                $password
             ]
         ];
 
-        $session_token = make_json_rpc_call('https://fiverr-sandbox.shipstream.app/api/jsonrpc/', $login_data);
+        $session_token = make_json_rpc_call($api_url, $login_data);
+
         if (!$session_token) {
             throw new Exception('Login failed.');
         }
@@ -168,7 +195,7 @@ function send_order_to_wms($order_id) {
             ]
         ];
 
-        $response = wp_remote_post('https://fiverr-sandbox.shipstream.app/api/jsonrpc/', [
+        $response = wp_remote_post($api_url, [
             'method' => 'POST',
             'body' => json_encode($data),
             'headers' => [
